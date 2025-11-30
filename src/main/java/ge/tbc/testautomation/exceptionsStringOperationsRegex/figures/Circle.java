@@ -1,0 +1,22 @@
+package ge.tbc.testautomation.exceptionsStringOperationsRegex.figures;
+
+
+import ge.tbc.testautomation.exceptionsStringOperationsRegex.LimitException;
+import ge.tbc.testautomation.exceptionsStringOperationsRegex.RadiusException;
+
+public class Circle extends Figure {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+        if (Figure.numberOfInstances > 5){
+            throw new LimitException("INSTANTIATION LIMIT REACHED");
+        }
+        if (this.radius <= 0){
+            throw new RadiusException("RADIUS VALUE NOT VALID");
+        }
+    }
+
+    public double getRadius() { return radius; }
+    public void setRadius(double radius) { this.radius = radius; }
+}
