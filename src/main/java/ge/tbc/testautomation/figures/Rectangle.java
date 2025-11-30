@@ -17,4 +17,12 @@ public class Rectangle extends Figure{
     public double getPerimeter() {
         return (this.a + this.b) * 2;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "a=" + a +
+                ", b=" + b +
+                '}';
+    }
 }
