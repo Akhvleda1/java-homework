@@ -46,6 +46,6 @@ public class Main {
         triangle.customSize(3);
         System.out.println("Triangle area after tripling its doubled size: " + triangle.getArea());
 
-        // modified first line
+        // first line
     }
 }
